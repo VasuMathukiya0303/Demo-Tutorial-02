@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp">
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:background="@drawable/ic_launcher_background"
+          android:src="@drawable/earth"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:contentDescription="@string/todo" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView"
+          tools:ignore="ExtraText,MissingConstraints">
+
+         <TextView
+             android:id="@+id/txtHeader"
+             style="@style/textViewStyle"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="@string/txtHeader"
+             android:gravity="center"
+             android:textSize="24sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+         <TextView
+             android:id="@+id/txtFirstName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/Vasu"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+
+         <TextView
+             android:id="@+id/txtMiddleName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/Atulbhai"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+
+         <TextView
+             android:id="@+id/txtLastName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/Mathukiya"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtMiddleName" />
+
+         <TextView
+             android:id="@+id/txtEmail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/vmathukiya183_rku_ac_in"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+         <TextView
+             android:id="@+id/txtPassword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/abc_123"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+         <TextView
+             android:id="@+id/txtGender"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/male"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+         <TextView
+             android:id="@+id/txtCity"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/dhoraji"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtGender" />
+
+         <TextView
+             android:id="@+id/txtMobileNumber"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:gravity="start|left"
+             android:text="@string/_1234567890"
+             android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/txtCity" />
+         >
+      </LinearLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
