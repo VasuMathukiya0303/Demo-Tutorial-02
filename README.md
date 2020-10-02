@@ -1,2 +1,3 @@
 # Demo-Tutorial-02
-This is First Demo
+This is Turial 2 of android aboutus project
+updated by abhi pipaliya
